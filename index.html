@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- #BeginTemplate "/Templates/mau.dwt" --><!-- DW6 -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Lobotomy Corporation - Face the Fear, Build the Future</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+    /* Tổng thể: Chuyển sang tông màu xanh đen công nghiệp của Lobotomy */
+    body {
+        background-color: #0b0f13; /* Màu tối đặc trưng của cơ sở */
+        color: #e0e0e0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font hiện đại hơn */
+    }
+
+    /* Thanh Menu (Navbar) - Màu xanh Cyan */
+    .navbar-inverse {
+        background-color: #0b0f13;
+        border-bottom: 2px solid #00f2ff; /* Viền xanh Cyan neon */
+    }
+    .navbar-inverse .navbar-brand {
+        color: #00f2ff !important;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .navbar-inverse .navbar-nav > li > a {
+        color: #b0fbff !important;
+    }
+    .navbar-inverse .navbar-nav > li > a:hover {
+        color: #ffffff !important;
+        background-color: #004d52;
+    }
+    .navbar-inverse .navbar-nav > .active > a, 
+    .navbar-inverse .navbar-nav > .active > a:focus, 
+    .navbar-inverse .navbar-nav > .active > a:hover {
+        background-color: #00f2ff;
+        color: #000 !important;
+    }
+
+    /* Hiệu ứng Carousel */
+    .navbar { margin-bottom: 0; border-radius: 0; }
+    .carousel-inner img { 
+        width: 100%; 
+        margin: auto; 
+        min-height:300px;
+        filter: contrast(110%) brightness(80%);
+    }
+    .carousel-caption {
+        background: rgba(11, 15, 19, 0.8);
+        border-left: 5px solid #00f2ff; /* Đường vạch đặc trưng UI game */
+        padding: 20px;
+        text-align: left;
+    }
+    .carousel-caption h3 { color: #00f2ff; font-weight: bold; }
+    .carousel-indicators .active { background-color: #00f2ff; }
+
+    /* Nội dung các ô (Well) - Giao diện bảng điều khiển */
+    .well {
+        background-color: rgba(0, 242, 255, 0.05) !important;
+        border: 1px solid #00f2ff;
+        color: #ffffff;
+        border-radius: 0px; /* Cạnh sắc nhọn công nghiệp */
+    }
+
+    /* Chân trang (Footer) */
+    footer {
+        background-color: #06090c;
+        border-top: 2px solid #00f2ff;
+        color: #00f2ff;
+        padding: 30px;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    /* Tùy chỉnh tiêu đề */
+    h3 { color: #00f2ff; text-transform: uppercase; font-weight: bold; }
+    
+    /* Hiệu ứng nhấp nháy nhẹ như màn hình máy tính cũ */
+    @keyframes scanline {
+        0% { background-position: 0 0; }
+        100% { background-position: 0 100%; }
+    }
+    body::after {
+        content: " ";
+        display: block;
+        position: fixed;
+        top: 0; left: 0; bottom: 0; right: 0;
+        background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.02), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.02));
+        z-index: 9999;
+        pointer-events: none;
+        background-size: 100% 2px, 3px 100%;
+    }
+
+    @media (max-width: 600px) { .carousel-caption { display: none; } }
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand"img="../HinhAnh/Site-logo.png"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="Trang_chu.html">Cơ Sở Quản Lý</a></li>
+        <li><a href="#">Abnormalities</a></li>
+        <li><a href="#">Đội Ngũ Sephirah</a></li>
+        <li><a href="#">Lưu Trữ E.G.O</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- #BeginEditable "1" -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="item active"> <img src="" alt="Lobotomy Facility" />
+      <div class="carousel-caption">
+        <h3>Face the Fear, Build the Future</h3>
+        <p>Hệ thống quản lý năng lượng sạch từ các thực thể bất thường.</p>
+      </div>
+    </div>
+    <div class="item"> <img src="HinhAnh/abnormalities.jpg" alt="Abnormalities" />
+      <div class="carousel-caption">
+        <h3>Báo Cáo Tình Trạng</h3>
+        <p>Kiểm soát các Abnormalities cấp độ ALEPH.</p>
+      </div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+<div class="container text-center"> <br />
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="well"> <img src="z.jpg" class="img-responsive" style="width:100%" alt="Sephirah" />
+        <p>Quản lý các bộ phận</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="well"> <img src="z7453667152502_90334565ff28b93b44c58d72a9969e58.jpg" class="img-responsive" style="width:100%" alt="Extraction" />
+        <p>Trích xuất E.G.O</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="well">
+        <p>Mức độ đe dọa hiện tại: <strong>NORMAL</strong></p>
+      </div>
+      <div class="well">
+        <p>Thông báo từ Angela: Cần tập trung thu thập năng lượng Enkephalin.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- #EndEditable -->
+<footer class="container-fluid text-center">
+  <p>LOBOTOMY CORPORATION STAFF ONLY © 2026 - Face the Fear, Build the Future.</p>
+</footer>
+
+</body>
+<!-- #EndTemplate --></html>
